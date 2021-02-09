@@ -57,7 +57,6 @@ class Loss(nn.Module):
         neg_num = torch.clamp(3 * pos_num, max=mask.size(1)).unsqueeze(-1)
         neg_mask = con_rank < neg_num
 
-        # print(con.shape, mask.shape, neg_mask.shape)
         closs = (con * (mask.float() + neg_mask.float())).sum(dim=1)
 
         # avoid no object detected

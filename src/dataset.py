@@ -54,10 +54,3 @@ class CocoDataset(CocoDetection):
         if self.transform is not None:
             image, (height, width), boxes, labels = self.transform(image, (height, width), boxes, labels)
         return image, target[0]["image_id"], (height, width), boxes, labels
-
-
-if __name__ == "__main__":
-    import numpy as np
-    dataset = CocoDataset("../../coco", 2017, "train")
-    image, img_id, (height, width), boxes, labels = dataset.__getitem__(44)
-    print (np.array(image))
