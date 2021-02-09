@@ -68,11 +68,11 @@ I trained my models by using NVIDIA RTX 2080. Below is mAP evaluation for **SSD-
 
 Some predictions are shown below:
 
-<img src="demo/1.jpg" width="280"> <img src="demo/2.jpg" width="280"> <img src="demo/3.jpg" width="280">
+<img src="demo/1.jpg" width="250"> <img src="demo/2.jpg" width="250"> <img src="demo/3.jpg" width="250">
 
-<img src="demo/4.jpg" width="280"> <img src="demo/5.jpg" width="280"> <img src="demo/6.jpg" width="280">
+<img src="demo/4.jpg" width="250"> <img src="demo/5.jpg" width="250"> <img src="demo/6.jpg" width="250">
 
-<img src="demo/7.jpg" width="280"> <img src="demo/8.jpg" width="280"> <img src="demo/9.jpg" width="280">
+<img src="demo/7.jpg" width="250"> <img src="demo/8.jpg" width="250"> <img src="demo/9.jpg" width="250">
 
 
 ## References
