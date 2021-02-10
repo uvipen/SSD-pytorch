@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Here is my pytorch implementation of the 2 models: **SSD-Resnet50** and **SSDLite-MobilenetV2**. These models are based on original model (SSD-VGG16) described in the paper [SSD: Single Shot MultiBox Detector](https://arxiv.org/pdf/1512.02325)
+Here is my pytorch implementation of the 2 models: **SSD-Resnet50** and **SSDLite-MobilenetV2**. These models are based on original model (SSD-VGG16) described in the paper [SSD: Single Shot MultiBox Detector](https://arxiv.org/pdf/1512.02325). **This implementation supports mixed precision training**.
 <p align="center">
   <img src="demo/video.gif"><br/>
   <i>An example of SSD Resnet50's output.</i>
@@ -58,7 +58,7 @@ Assume that at this step, you either already installed necessary libraries or yo
 
 Now, with my code, you can:
 
-* **Train your model** by running `python -m torch.distributed.launch --nproc_per_node=NUM_GPUS_YOU_HAVE train.py --model [ssd|ssdlite] --batch-size [int]`. You could stop or resume your training process whenever you want. For example, if you stop your training process after 10 epochs, the next time you run the training script, your training process will continue from epoch 10. mAP evaluation, by default, will be run at the end of each epoch.
+* **Train your model** by running `python -m torch.distributed.launch --nproc_per_node=NUM_GPUS_YOU_HAVE train.py --model [ssd|ssdlite] --batch-size [int] [--amp]`. You could stop or resume your training process whenever you want. For example, if you stop your training process after 10 epochs, the next time you run the training script, your training process will continue from epoch 10. mAP evaluation, by default, will be run at the end of each epoch. **Note**: By specifying **--amp** flag, your model will be trained with mixed precision (FP32 and FP16) instead of full precision (FP32) by default. Mixed precision training reduces gpu usage and therefore allows you train your model with bigger batch size while sacrificing negligible accuracy. More infomation could be found at [apex](https://github.com/NVIDIA/apex) and [pytorch](https://pytorch.org/docs/stable/notes/amp_examples.html).
 * **Test your model for COCO dataset** by running `python test_dataset.py --pretrained_model path/to/trained_model`
 * **Test your model for image** by running `python test_image.py --pretrained_model path/to/trained_model --input path/to/input/file --output path/to/output/file`
 * **Test your model for video** by running `python test_video.py --pretrained_model path/to/trained_model --input path/to/input/file --output path/to/output/file`
