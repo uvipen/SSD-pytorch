@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Here is my pytorch implementation of the 2 models: **SSD-Resnet50** and **SSDLite-MobilenetV2**. These models are based on original model (SSD-VGG16) described in the paper [SSD: Single Shot MultiBox Detector](https://arxiv.org/pdf/1512.02325). **This implementation supports mixed precision training**.
+Here is my pytorch implementation of 2 models: **SSD-Resnet50** and **SSDLite-MobilenetV2**. These models are based on original model (SSD-VGG16) described in the paper [SSD: Single Shot MultiBox Detector](https://arxiv.org/pdf/1512.02325). **This implementation supports mixed precision training**.
 <p align="center">
   <img src="demo/video.gif"><br/>
   <i>An example of SSD Resnet50's output.</i>
