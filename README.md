@@ -63,6 +63,7 @@ Now, with my code, you can:
 * **Test your model for image** by running `python test_image.py --pretrained_model path/to/trained_model --input path/to/input/file --output path/to/output/file`
 * **Test your model for video** by running `python test_video.py --pretrained_model path/to/trained_model --input path/to/input/file --output path/to/output/file`
 
+You could download my trained weight for SSD-Resnet50 at [link](https://drive.google.com/drive/folders/1_DYYDJUfwLIvGBDnM3hMFNgkVRZW6MgX?usp=sharing)
 ## Experiments
 
 I trained my models by using NVIDIA RTX 2080. Below is mAP evaluation for **SSD-Resnet50** trained for 54 epochs on **COCO val2017** dataset 
