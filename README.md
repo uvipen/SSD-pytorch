@@ -18,7 +18,7 @@ I believe that many of you when seeing this implementation have this question in
 - many improvements added
 - not evaluated/visualized
 
-The above-mentioned points makes learner hard to understand how original ssd looks like. Hence, I re-implement this well-known model, focusing on simplicity. I believe this implementation is suitable for ML/DL users from different levels, especially beginners. In compared to model described in the paper, there are some minor changes (e.g. backbone), but other parts follow paper strictly.  
+The above-mentioned points make learner hard to understand how original ssd looks like. Hence, I re-implement this well-known model, focusing on simplicity. I believe this implementation is suitable for ML/DL users from different levels, especially beginners. In compared to model described in the paper, there are some minor changes (e.g. backbone), but other parts follow paper strictly.  
 
 ## Datasets
 
