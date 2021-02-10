@@ -8,6 +8,17 @@ Here is my pytorch implementation of the 2 models: **SSD-Resnet50** and **SSDLit
   <i>An example of our model's output.</i>
 </p>
 
+## Motivation
+
+Why this implementation exists while there are many ssd implementations already ?
+
+I believe that many of you when seeing this implementation have this question in your mind. Indeed there are already many implementations for SSD and its variants in Pytorch. However most of them are either: 
+- over-complicated
+- modularized
+- many improvements added
+- not evaluated/visualized
+
+The above-mentioned points makes learner hard to understand how original ssd looks like. Hence, I re-implement this well-known model, focusing on simplicity. I believe this implementation is suitable for ML/DL users from different levels, especially beginners. In compared to model described in the paper, there are some minor changes (e.g. backbone), but other parts follow paper strictly.  
 
 ## Datasets
 
